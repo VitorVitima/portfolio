@@ -4,3 +4,63 @@
 header{
     z-index: 1;
 }
+
+/* media query header */
+
+@media (min-width: 700px) {
+    div#menuTag > div#menuDivs{
+        display: none;
+    }
+    div#menuTag > div#links {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        color: white;
+    }
+    div#menuTag > div#links > a {
+        width: 100px;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+    div#menuTag > div#links > a:hover{
+        box-shadow: 0px 0px 10px #ffffff;
+        color: black;
+        background-color: white;
+        transition-duration: 0.3s;
+    }
+}
+
+/* media query main */
+@media (min-height: 200px) and (max-height: 500px){
+    div#buttonsTP{
+        margin: 5px 0px 0px 0px;
+    }
+    section#conteinerProjetos > div{
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+    
+        transition-duration: 0.5s;
+    }
+    footer{
+        display: none;
+    }
+}
+
+@media (min-width: 700px) and (min-height: 600px){
+    div#buttonsTP > button.buttonProjetos{
+        cursor: pointer;
+    }
+    section#conteinerProjetos{
+        width: 100vw;
+        height: 60vh;
+    }
+    section#conteinerProjetos > div{
+        background-color: blue;
+        width: 45%;
+        height: 45%;
+    
+        transition-duration: 0.5s;
+    }
+}

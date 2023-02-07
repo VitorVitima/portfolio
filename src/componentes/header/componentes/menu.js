@@ -1,5 +1,6 @@
 import './menu.css'
 import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
 function Menu(props){
     const clickMenu = () =>{
         const menu = document.querySelector('#menuTag')
@@ -11,17 +12,6 @@ function Menu(props){
             props.setMenu(true)
         }
     }
-    const navFun = () => {
-        if(props.menu){
-            return(
-                <div id='links'>
-                    <Link to='./'>Sobre Mim</Link>
-                    <Link to='./' >Habilidades</Link>
-                    <Link to='./' >Contato</Link>
-                </div>
-            )
-        }
-    }
     return(
         <nav>  
             <div 
@@ -29,11 +19,17 @@ function Menu(props){
                 className='close'
                 onClick={()=>clickMenu()}    
                 >
-                <div id='menu1'></div>   
-                <div id='menu2'></div>
-                <div id='menu3'></div>
+                <div id="menuDivs">
+                    <div id='menu1'></div>
+                    <div id='menu2'></div>
+                    <div id='menu3'></div>
+                </div>
+                <div id='links'>
+                    <Link to='./'>Sobre Mim</Link>
+                    <Link to='./' >Habilidades</Link>
+                    <Link to='./' >Contato</Link>
+                </div>
             </div>  
-            {navFun()}
         </nav>
     )
 }

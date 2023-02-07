@@ -1,0 +1,5 @@
+footer{
+    position: absolute;
+    top: 100vh;
+    transform: translate(0px, -100%);
+}

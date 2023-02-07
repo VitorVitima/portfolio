@@ -1,36 +1,3 @@
-div#menuTag {
-    width: fit-content;
-    height: fit-content;
-
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-    margin: 11px 0px;
-
-    cursor: pointer;
-}
-div#menuTag > div{
-    background-color: aliceblue;
-
-    border-radius: 2px;
-
-    width: 30px;
-    height: 5px;
-
-    transition-duration: 0.3s;
-}
-div.open > div#menu1 {
-    rotate: 130deg;
-}
-div.open > div#menu2 {
-    width: 0px;
-    height: 0px;
-    background-color: #000000;
-}
-div.open > div#menu3 {
-    transform: translate(28%, 140%);
-    rotate: -130deg;
-}
 nav{
     background-color: black;
     display: flex;
@@ -42,8 +9,51 @@ nav{
 
     width: calc(100vw - 20px);
     height: 210px;
+
+    z-index: 2;
 }
-nav div#links {
+div#menuTag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div#menuDivs {
+    width: fit-content;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin: 11px 0px;
+
+    cursor: pointer;
+}
+div#menuDivs > div{
+    background-color: aliceblue;
+    
+    border-radius: 2px;
+    
+    width: 30px;
+    height: 5px;
+    
+    transition-duration: 0.3s;
+}
+div.open > div#menuDivs > div#menu1 {
+    rotate: 130deg;
+}
+div.open > div#menuDivs > div#menu2 {
+    width: 0px;
+    height: 0px;
+    background-color: #000000;
+}
+div.open > div#menuDivs > div#menu3 {
+    transform: translate(28%, 140%);
+    rotate: -130deg;
+}
+nav > div.close > div#links{
+    display: none;
+}
+nav > div.open > div#links {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,11 +61,12 @@ nav div#links {
 
     color: white;
 }
-nav > div#links > a {
+nav > div > div#links > a {
     width: 80vw;
     padding: 10px 0px;
     text-align: center;
-    border: 1px solid white;
+    border: 2px solid white;
     color: white;
     text-decoration: none;
+    border-radius: 10px;
 }

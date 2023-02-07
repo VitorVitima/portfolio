@@ -7,7 +7,9 @@ function Header(){
     return(
         <header>
             <h1>Vitor Vitima</h1>
-            <Menu menu={menu} setMenu={setMenu}></Menu>
+            <Menu 
+                menu={menu} setMenu={setMenu}
+                ></Menu>
         </header>
     )
 }

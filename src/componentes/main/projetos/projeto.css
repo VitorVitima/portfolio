@@ -1,0 +1,60 @@
+div#buttonsTP{
+    min-width: 200px;
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0px;
+}
+div#buttonsTP > button.buttonProjetos{
+    background-color: black;
+    color: white;
+
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #00000044;
+    padding: 10px;
+    border: 2px solid black;
+
+    transition-duration: 0.2s;
+}
+div#buttonsTP > button#marcado{
+    background-color: white;
+    box-shadow: 0px 0px 5px #0000006e;
+    color: black;
+
+    transition-duration: 0.3s;
+}
+section#conteinerProjetos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100vw;
+    height: 50vh;
+
+}
+section#conteinerProjetos > div{
+    background-color: blue;
+    width: 40%;
+    height: 40%;
+
+    transition-duration: 0.5s;
+}
+section#conteinerProjetos > div.html_css {
+    background-image: linear-gradient(180deg, #E34E26, #077AC4);
+    box-shadow: 0px 0px 10px #077cc454;
+    border: 3px solid #e34f26c5;
+}
+section#conteinerProjetos > div.js{
+    background-color: #F7E018;
+    box-shadow: 0px 0px 10px #f7e1187a;
+    border: 3px solid #F7E018;
+}
+section#conteinerProjetos > div.react{
+    background-color: #00D0F2;
+    box-shadow: 0px 0px 10px #00d2f246;
+    border: 3px solid #00D0F2;
+}
+
