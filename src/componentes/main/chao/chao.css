@@ -1,7 +1,8 @@
 div#chaoConteiner{
     position: absolute;
-    top: 250px;
+    top: 100vh;
     z-index: 0;
+    transform: translate(-0%, -100%);
 
 
     background-color: black;

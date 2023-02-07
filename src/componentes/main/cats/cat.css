@@ -1,16 +1,22 @@
 div#catConteiner{
     width: 100vw;
+    height: fit-content;
     display: flex;
     justify-content: center;
+
+    position: absolute;
+    
 }
 div#catTag{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
     width: 150px;
-    height: 150px;
+    height: 149px;
     z-index: 1;
     position: absolute;
+    top: 100vh;
+    transform: translate(-0%, -255%);
 }
 
 div.cat1{
