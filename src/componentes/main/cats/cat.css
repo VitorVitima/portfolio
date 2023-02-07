@@ -1,0 +1,42 @@
+div#catConteiner{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+div#catTag{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+    position: absolute;
+}
+
+div.cat1{
+    background-image: url('./cat1.png');
+}
+div.cat2{
+    background-image: url('./cat2.png');
+}
+div.cat3{
+    background-image: url('./cat3.png');
+}
+div.cat4{
+    background-image: url('./cat4.png');
+}
+div.cat5{
+    background-image: url('./cat5.png');
+}
+div.cat6{
+    background-image: url('./cat6.png');
+}
+div.cat7{
+    background-image: url('./cat7.png');
+}
+div.cat8{
+    background-image: url('./cat8.png');
+}
+div.cat9{
+    background-image: url('./cat9.png');
+}

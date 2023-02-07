@@ -1,0 +1,41 @@
+div#chaoConteiner{
+    position: absolute;
+    top: 250px;
+    z-index: 0;
+
+
+    background-color: black;
+    width: 100vw;
+    height: 50px;
+
+    overflow: hidden;
+}
+div#chaoConteiner > div#chao{
+    width: 99000vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+div#chaoConteiner > div#chao > div.listras{
+    background-color: white;
+    width: 50px;
+    height: 5px;
+}
+div#chaoConteiner > div#chao > div.listras:nth-last-child(11){
+    animation-name: chao;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+}
+@keyframes chao {
+    0%{margin: 0px 0px 0px -100px;}
+    10%{margin: 0px 0px 0px -90px;}
+    20%{margin: 0px 0px 0px -80px;}
+    30%{margin: 0px 0px 0px -70px;}
+    40%{margin: 0px 0px 0px -60px;}
+    60%{margin: 0px 0px 0px -50px;}
+    70%{margin: 0px 0px 0px -40px;}
+    80%{margin: 0px 0px 0px -30px;}
+    90%{margin: 0px 0px 0px -20px;}
+    100%{margin: 0px 0px 0px -10px;}
+}
