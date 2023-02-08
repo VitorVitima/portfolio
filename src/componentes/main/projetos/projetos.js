@@ -1,11 +1,11 @@
 import React from 'react'
 import './projeto.css'
 function Projetos(props){
-    const allButtons = [...document.querySelectorAll('.buttonProjetos')]
     const sectionFlexD = ()=>{
-            return 'conteinerProjetos'
+        return 'conteinerProjetos'
     }
     const trocaProjeto = (e) =>{
+        const allButtons = [...document.querySelectorAll('.buttonProjetos')]
         allButtons?.map((el)=>{
             if(el.innerHTML == e.target.innerHTML){
                 el.id = 'marcado'
@@ -48,9 +48,9 @@ function Projetos(props){
     return (
         <article id='allProjectsConteiner'>
             <div id="buttonsTP">
-                <button onClick={(e)=>trocaProjeto(e)} className="buttonProjetos">HTML-CSS</button>
-                <button onClick={(e)=>trocaProjeto(e)} className="buttonProjetos">JavaScript</button>
-                <button onClick={(e)=>trocaProjeto(e)} className="buttonProjetos">React.JS</button>
+                <button onClick={(e)=>trocaProjeto(e)} className="buttonProjetos" id='HTML-CSS'>HTML-CSS</button>
+                <button onClick={(e)=>trocaProjeto(e)} className="buttonProjetos" id='JavaScript'>JavaScript</button>
+                <button onClick={(e)=>trocaProjeto(e)} className="buttonProjetos" id='React.JS'>React.JS</button>
             </div>
             {projetoSelecionado()}
 

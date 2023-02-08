@@ -1,6 +1,6 @@
 div#buttonsTP{
+    max-width: 900px;
     min-width: 200px;
-    max-width: 100vw;
     display: flex;
     justify-content: space-evenly;
     margin: 20px 0px;

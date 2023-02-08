@@ -1,6 +1,5 @@
 import './menu.css'
 import { Link } from 'react-router-dom'
-import { useEffect } from 'react'
 function Menu(props){
     const clickMenu = () =>{
         const menu = document.querySelector('#menuTag')
@@ -28,6 +27,12 @@ function Menu(props){
                     <Link to='./'>Sobre Mim</Link>
                     <Link to='./' >Habilidades</Link>
                     <Link to='./' >Contato</Link>
+                </div>
+                <div id='iconsTag'>
+                    <Link target={'_blank'} to='https://twitter.com/VVitima'><i id='twitter' class="fa-brands fa-twitter"></i></Link>
+                    <Link target={'_blank'} to='https://github.com/VitorVitima'><i id='git' class="fa-brands fa-github"></i></Link>
+                    <Link target={'_blank'} to='https://www.linkedin.com/in/henrique-sousa-1b4b12263/'><i id='linkedin' class="fa-brands fa-linkedin-in"></i></Link>
+                    
                 </div>
             </div>  
         </nav>
