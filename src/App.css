@@ -94,9 +94,6 @@ header{
     footer{
         display: none;
     }
-    main{
-        display: none;
-    }
 }
 
 /* media query main */
@@ -130,5 +127,15 @@ header{
         height: 45%;
     
         transition-duration: 0.5s;
+    }
+}
+@media (min-width: 900px) {
+    body, div#root{
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+    }
+    main {
+        width: calc(100vw - 100px);
     }
 }
