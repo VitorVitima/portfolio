@@ -30,12 +30,15 @@ header{
         transition-duration: 0.3s;
     }
 }
-@media (min-width: 900px) {
+@media (min-width: 900px) and (min-height: 600px)  {
     header{
         width: 100px;
         height: 100vh;
         display: flex;
         justify-content: center;
+
+        position: sticky;
+        top: -0px;
     }
     header > h1 {
         display: none;
@@ -129,13 +132,44 @@ header{
         transition-duration: 0.5s;
     }
 }
-@media (min-width: 900px) {
+@media (min-width: 900px) and (min-height: 600px) {
     body, div#root{
+        overflow-x: hidden;
         display: flex;
         width: 100vw;
         height: 100vh;
     }
     main {
         width: calc(100vw - 100px);
+        display: flex;
+        flex-direction: column;
+    }
+    article#allProjectsConteiner{
+        width: fit-content;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    div#buttonsTP {
+        gap: 20px;
+    }
+    div#buttonsTP > button#Todos{
+        display: block;
+    }
+    section#conteinerProjetos{
+        width: fit-content;
+        max-width: 1400px;
+        height: 100%;
+    }
+    section#conteinerProjetos > div{
+        background-color: blue;
+        width: 200px;
+        height: 200px;
+        transition-duration: 0.5s;
+    }
+
+    article#sobreMim{
+        display: flex;
     }
 }

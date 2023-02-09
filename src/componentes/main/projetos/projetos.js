@@ -17,45 +17,46 @@ function Projetos(props){
     }
     const projetoSelecionado = () => {
         if(props.projeto == 'HTML-CSS'){
-            return(
+            return (
                 <section id={sectionFlexD()}>
-                    <div id='projeto1' className='html_css'></div>
-                    <div id='projeto2' className='html_css'></div>
-                    <div id='projeto3' className='html_css'></div>
-                    <div id='projeto4' className='html_css'></div>
+                    {props.projetos.html_css()}
                 </section>
             )
         } else if (props.projeto == 'JavaScript'){
-            return(
+            return (
                 <section id={sectionFlexD()}>
-                    <div id='projeto1' className='js'></div>
-                    <div id='projeto2' className='js'></div>
-                    <div id='projeto3' className='js'></div>
-                    <div id='projeto4' className='js'></div>
+                    {props.projetos.js()}
                 </section>
             )
         }else if (props.projeto == 'React.JS'){
             return (
                 <section id={sectionFlexD()}>
-                    <div id='projeto1' className='react'></div>
-                    <div id='projeto2' className='react'></div>
-                    <div id='projeto3' className='react'></div>
-                    <div id='projeto4' className='react'></div>
+                    {props.projetos.react()}
+                </section>
+            )
+        } else if (props.projeto == 'Todos' && window.innerWidth >= 900){
+            return(
+                <section id={sectionFlexD()}>
+                    {props.projetos.html_css()}
+                    {props.projetos.js()}
+                    {props.projetos.react()}
                 </section>
             )
         }
     }
     return (
-        <article id='allProjectsConteiner'>
-            <div id="buttonsTP">
-                <button onClick={(e)=>trocaProjeto(e)} className="buttonProjetos" id='HTML-CSS'>HTML-CSS</button>
-                <button onClick={(e)=>trocaProjeto(e)} className="buttonProjetos" id='JavaScript'>JavaScript</button>
-                <button onClick={(e)=>trocaProjeto(e)} className="buttonProjetos" id='React.JS'>React.JS</button>
-                <button onClick={(e)=>trocaProjeto(e)} className="buttonProjetos" id='allProjects'>Todos</button>
-            </div>
-            {projetoSelecionado()}
-
-        </article>
+        <>
+            <article id='allProjectsConteiner'>
+                <h1>Habilidades</h1>
+                <div id="buttonsTP">
+                    <button onClick={(e)=>trocaProjeto(e)} className="buttonProjetos" id='Todos'>Todos</button>
+                    <button onClick={(e)=>trocaProjeto(e)} className="buttonProjetos" id='HTML-CSS'>HTML-CSS</button>
+                    <button onClick={(e)=>trocaProjeto(e)} className="buttonProjetos" id='JavaScript'>JavaScript</button>
+                    <button onClick={(e)=>trocaProjeto(e)} className="buttonProjetos" id='React.JS'>React.JS</button>
+                </div>
+                {projetoSelecionado()}
+            </article>
+        </>
     )
 }
 export default Projetos

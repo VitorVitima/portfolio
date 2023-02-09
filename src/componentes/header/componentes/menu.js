@@ -1,5 +1,4 @@
 import './menu.css'
-import { Link } from 'react-router-dom'
 function Menu(props){
     const clickMenu = () =>{
         const menu = document.querySelector('#menuTag')
@@ -9,6 +8,13 @@ function Menu(props){
         } else {
             menu.className = 'open'
             props.setMenu(true)
+        }
+    }
+    const links = () => {
+        if(window.innerWidth >= 900){
+            return '#allProjectsConteiner'
+        } else {
+            return '#'
         }
     }
     return(
@@ -24,15 +30,14 @@ function Menu(props){
                     <div id='menu3'></div>
                 </div>
                 <div id='links'>
-                    <Link to='./'>Sobre Mim</Link>
-                    <Link to='./' >Habilidades</Link>
-                    <Link to='./' >Contato</Link>
+                    <a href={links()} >Habilidades</a>
+                    <a href='#'>Sobre Mim</a>
+                    <a href='#' >Contato</a>
                 </div>
                 <div id='iconsTag'>
-                    <Link target={'_blank'} to='https://twitter.com/VVitima'><i id='twitter' class="fa-brands fa-twitter"></i></Link>
-                    <Link target={'_blank'} to='https://github.com/VitorVitima'><i id='git' class="fa-brands fa-github"></i></Link>
-                    <Link target={'_blank'} to='https://www.linkedin.com/in/henrique-sousa-1b4b12263/'><i id='linkedin' class="fa-brands fa-linkedin-in"></i></Link>
-                    
+                    <a target={'_blank'} href='https://twitter.com/VVitima'><i id='twitter' className="fa-brands fa-twitter"></i></a>
+                    <a target={'_blank'} href='https://github.com/VitorVitima'><i id='git' className="fa-brands fa-github"></i></a>
+                    <a target={'_blank'} href='https://www.linkedin.com/in/henrique-sousa-1b4b12263/'><i id='linkedin' className="fa-brands fa-linkedin-in"></i></a>
                 </div>
             </div>  
         </nav>
