@@ -51,6 +51,7 @@ function Projetos(props){
                 <button onClick={(e)=>trocaProjeto(e)} className="buttonProjetos" id='HTML-CSS'>HTML-CSS</button>
                 <button onClick={(e)=>trocaProjeto(e)} className="buttonProjetos" id='JavaScript'>JavaScript</button>
                 <button onClick={(e)=>trocaProjeto(e)} className="buttonProjetos" id='React.JS'>React.JS</button>
+                <button onClick={(e)=>trocaProjeto(e)} className="buttonProjetos" id='allProjects'>Todos</button>
             </div>
             {projetoSelecionado()}
 
