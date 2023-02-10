@@ -12,8 +12,9 @@ article#sobreMim > div#textAndImg{
     width: 100%;
     height: fit-content;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
     overflow: hidden;
 }
 article#sobreMim > div#textAndImg > div#ps{
@@ -31,9 +32,11 @@ article#sobreMim > div#textAndImg > div#ps > p{
 article#sobreMim > div#textAndImg > div#imgs {
     width: fit-content;
     height: 100%;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
+
+    overflow: hidden;
 }
 article#sobreMim > div#textAndImg > div#imgs > img {
     user-select: none;

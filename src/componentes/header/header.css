@@ -8,8 +8,11 @@ header {
 
     width: 100vw;
     height: 100px;
+
+    position: sticky;
+    top: -50px;
 }
 header > h1 {
     color: white;
-    margin: 0;
+    margin: 10px 0px 0px 0px;
 }

@@ -34,7 +34,7 @@ function Projetos(props){
                     {props.projetos.react()}
                 </section>
             )
-        } else if (props.projeto == 'Todos' && window.innerWidth >= 900){
+        } else if (props.projeto == 'Todos'){
             return(
                 <section id={sectionFlexD()}>
                     {props.projetos.html_css()}

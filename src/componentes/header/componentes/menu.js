@@ -1,71 +1,25 @@
 import './menu.css'
-import { Link } from 'react-router-dom'
 function Menu(props){
-    const clickMenu = () =>{
+    const fecharMenu = () => {
         const menu = document.querySelector('#menuTag')
+        menu.className = 'close'
+        props.setMenu(false)
+    }
+    const abrirMenu = () => {
+        const menu = document.querySelector('#menuTag')
+        menu.className = 'open'
+        props.setMenu(true)
+    }
+    const clickMenu = () =>{
         if(props.menu){
-            menu.className = 'close'
-            props.setMenu(false)
+            fecharMenu()
         } else {
-            menu.className = 'open'
-            props.setMenu(true)
+            abrirMenu()    
         }
     }
-    const hab = () => {
-        if(window.innerWidth >= 900){
-            return (
-                <a 
-                    href='#allProjectsConteiner'
-                >
-                    Habilidades
-                </a>
-            )
-            
-        } else {
-            return (
-                <Link to='habilidades'>
-                    Habilidades
-                </Link>
-            )
-        }
-    }
-    const sob = () => {
-        if(window.innerWidth >= 900){
-            return (
-                <a
-                    href='#contato'
-                >
-                    Sobre Mim
-                </a>
-            )
-        } else {
-            return (
-                <Link
-                    to='sobreMim'
-                >
-                    Sobre Mim
-                </Link>
-            )
-        }
-    }
-    const con = () => {
-        if(window.innerWidth >= 900){
-            return (
-                <a
-                    href='#contato'
-                >
-                    Contato
-                </a>
-            )
-        } else {
-            return (
-                <Link
-                    to='contato'
-                >
-                    Contato
-                </Link>
-            )
-        }
+    const clickLink = () =>{
+        const menu = document.querySelector('#menuTag')
+        menu.className = 'close'
     }
     return(
         <nav>  
@@ -80,9 +34,9 @@ function Menu(props){
                     <div id='menu3'></div>
                 </div>
                 <div id='links'>
-                    {sob()}
-                    {hab()}
-                    {con()}
+                    <a onClick={()=>clickMenu()} href='#sobreMim'>Sobre Mim</a>
+                    <a onClick={()=>clickMenu()} href='#allProjectsConteiner'>Habilidades</a>
+                    <a onClick={()=>clickMenu()} href='#contato'>Contato</a>
                 </div>
                 <div id='iconsTag'>
                     <a target={'_blank'} href='https://twitter.com/VVitima'><i id='twitter' className="fa-brands fa-twitter"></i></a>
