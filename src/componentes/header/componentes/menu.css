@@ -11,6 +11,7 @@ nav{
     height: 210px;
 
     z-index: 2;
+
 }
 div#menuTag {
     display: flex;

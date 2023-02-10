@@ -2,6 +2,8 @@ import { useState } from "react"
 
 import Projetos from "./projetos/projetos"
 import SobreMim from "./sobreMim/SobreMim"
+import Contato from "./contato/contato"
+import './main.css'
 function Body(){
     const [projeto, setProjeto] = useState('Todos')
     const projetos = {
@@ -39,12 +41,13 @@ function Body(){
     }
     return(
         <main>
+            <SobreMim></SobreMim>
             <Projetos
                 projeto={projeto}
                 setProjeto={setProjeto}
                 projetos={projetos}
             ></Projetos>
-            <SobreMim></SobreMim>
+            <Contato></Contato>
         </main>
     )
 }

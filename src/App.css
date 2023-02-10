@@ -1,5 +1,7 @@
 *{
     z-index: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
 }
 header{
     z-index: 1;
@@ -94,6 +96,55 @@ header{
         cursor: pointer;
         transition-duration: 0.3s;
     }
+    article#sobreMim > h1{
+        margin-bottom: 20px;
+    }
+    article#sobreMim > div#textAndImg > div#ps > p{    
+        width: 500px;
+        line-height: 30px;
+        
+        font-size: 20px;
+    }
+    article#sobreMim > div#textAndImg > div#imgs {
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    article#sobreMim > div#textAndImg > div#imgs > img#salgadin {
+        width: 25%;
+        max-width: 200px;
+        margin-top: 150px;
+        animation-name: pato;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+    }
+    article#sobreMim > div#textAndImg > div#imgs > img#pato {
+        width: 50%;
+        max-width: 200px;
+    
+    
+        animation-name: pato;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+    }
+    article#sobreMim > div#textAndImg > div#imgs > img#cois {
+        width: 10px;
+        height: 20px;
+        margin-left: -10px;
+        margin-bottom: 150px;
+    
+        animation-name: cois;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+        
+    }
+    article#contato{
+        display: block;
+    }
     footer{
         display: none;
     }
@@ -133,6 +184,10 @@ header{
     }
 }
 @media (min-width: 900px) and (min-height: 600px) {
+    h1{
+        font-size: 30px;
+        margin-top: 100px;
+    }
     body, div#root{
         overflow-x: hidden;
         display: flex;

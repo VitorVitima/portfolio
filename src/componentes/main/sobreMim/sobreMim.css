@@ -1,0 +1,108 @@
+article#sobreMim{
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+}
+
+article#sobreMim > div#textAndImg{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+article#sobreMim > div#textAndImg > div#ps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+article#sobreMim > div#textAndImg > div#ps > p{
+    padding: 10px;
+    margin: 2vh;
+    max-width: 500px;
+
+    font-size: 17px;
+}
+article#sobreMim > div#textAndImg > div#imgs {
+    width: fit-content;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+article#sobreMim > div#textAndImg > div#imgs > img {
+    user-select: none;
+}
+article#sobreMim > div#textAndImg > div#imgs > img#salgadin {
+    width: 15%;
+    max-width: 200px;
+    margin-top: 150px;
+    animation-name: pato;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+article#sobreMim > div#textAndImg > div#imgs > img#pato {
+    width: 40%;
+    max-width: 200px;
+
+
+    animation-name: pato;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+article#sobreMim > div#textAndImg > div#imgs > img#cois {
+    width: 5px;
+    height: 15px;
+    margin-left: -10px;
+    margin-bottom: 150px;
+
+    animation-name: cois;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    
+}
+
+@keyframes pato {
+    0% {
+        rotate: -3deg;
+    }
+    25%{
+        rotate: 3deg;
+    }
+    50%{
+        rotate: -3deg;
+    }
+    75% {
+        rotate: 3deg;
+    }
+    100%{
+        rotate: -3deg;
+    }
+
+}
+@keyframes cois {
+    0% {
+        rotate: -10deg;
+    }
+    25%{
+        rotate: 10deg;
+    }
+    50%{
+        rotate: -10deg;
+    }
+    75% {
+        rotate: 10deg;
+    }
+    100%{
+        rotate: -10deg;
+    }
+
+}

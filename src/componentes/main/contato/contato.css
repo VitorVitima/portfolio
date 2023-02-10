@@ -1,0 +1,7 @@
+article#contato{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px 0px 0px 100px;
+
+    display: none;
+}
