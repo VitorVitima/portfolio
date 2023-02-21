@@ -12,7 +12,7 @@ function Body(){
                 <>
                     <div id='projeto1' className='html_css'>
                         <p>
-                            Pagina de login focada no css e na responsividade...
+                            Pagina de login focada no css e no visual, com um pouco de JavaScript.
                         </p>
                     </div>
                     <div id='projeto2' className='html_css'></div>
