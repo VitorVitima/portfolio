@@ -44,6 +44,8 @@ section#conteinerProjetos > div{
     height: 40%;
 
     transition-duration: 0.5s;
+
+    display: flex;
 }
 section#conteinerProjetos > div.html_css {
     background-image: linear-gradient(180deg, #E34E26, #077AC4);
@@ -60,4 +62,21 @@ section#conteinerProjetos > div.react{
     box-shadow: 0px 0px 10px #00d2f246;
     border: 3px solid #00D0F2;
 }
-
+section#conteinerProjetos > div > a{
+    color: black;
+    text-decoration: none;
+}
+section#conteinerProjetos > div > a:hover > div.dados{
+            
+}
+section#conteinerProjetos > div > a > div.dados {
+    background-color: white;
+}
+section#conteinerProjetos > div > a > div.dados > p{
+    margin: 0px;
+    padding: 5px 0px 9px 0px;
+}
+section#conteinerProjetos > div > a > div.dados > img{
+    width: 90%;
+    border: 1px solid #e34f26c5;
+}
