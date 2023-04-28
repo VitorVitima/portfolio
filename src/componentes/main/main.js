@@ -11,7 +11,7 @@ function Body(){
         html_css: ()=>{
             return(
                 <>
-                    <div id='projeto1' className='html_css'>
+                    <div id='projeto1_html_css' className='html_css'>
                         <a
                             href="https://vitorvitima.github.io/login/"
                             target='_blank'
@@ -26,7 +26,7 @@ function Body(){
                         </div>
                         </a>
                     </div>
-                    <div id='projeto2' className='html_css'>
+                    <div id='projeto2_html_css' className='html_css'>
                     <a
                             href="https://vitorvitima.github.io/android/"
                             target='_blank'
@@ -41,7 +41,7 @@ function Body(){
                         </div>
                         </a>
                     </div>
-                    <div id='projeto3' className='html_css'>
+                    <div id='projeto3_html_css' className='html_css'>
                     <a
                             href="https://vitorvitima.github.io/cordel/"
                             target='_blank'
@@ -56,7 +56,7 @@ function Body(){
                         </div>
                         </a>
                     </div>
-                    <div id='projeto4' className='html_css'>
+                    <div id='projeto4_html_css' className='html_css'>
                     <a
                             href="https://vitorvitima.github.io/Replica_Spotify/"
                             target='_blank'
@@ -78,7 +78,21 @@ function Body(){
         js: ()=>{
             return(
                 <>
-                    <div id='projeto1' className='js'></div>
+                    <div id='projeto1' className='js'>
+                    <a
+                            href="https://divulga-fone.vercel.app/"
+                            target="_blank"
+                        >
+                            <div className="dados">
+                                <p>
+                                    To-do List, salva os dados no localStorage, criado com JavaScript e Sass
+                                </p>
+                                <img
+                                    src="./imgs/projetos/todoList.png"
+                                ></img>
+                            </div>
+                        </a>
+                    </div>
                     <div id='projeto2' className='js'></div>
                     <div id='projeto3' className='js'></div>
                     <div id='projeto4' className='js'></div>
@@ -88,7 +102,21 @@ function Body(){
         react: ()=>{
             return (
                 <>
-                    <div id='projeto1' className='react'></div>
+                    <div id='projeto1' className='react'>
+                        <a
+                            href="https://divulga-fone.vercel.app/"
+                            target="_blank"
+                        >
+                            <div className="dados">
+                                <p>
+                                    Site de recomendação de comércios; usando Mongodb, Node.js e React
+                                </p>
+                                <img
+                                    src="./imgs/projetos/divulaFone.png"
+                                ></img>
+                            </div>
+                        </a>
+                    </div>
                     <div id='projeto2' className='react'></div>
                     <div id='projeto3' className='react'></div>
                     <div id='projeto4' className='react'></div>

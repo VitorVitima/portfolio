@@ -49,7 +49,7 @@ function Projetos(props){
             <article id='allProjectsConteiner'>
                 <h1>Habilidades</h1>
                 <div id="buttonsTP">
-                    <button onClick={(e)=>trocaProjeto(e)} className="buttonProjetos" id='Todos'>Todos</button>
+                    <button onClick={(e)=>trocaProjeto(e)} className="buttonProjetos" id='marcado'>Todos</button>
                     <button onClick={(e)=>trocaProjeto(e)} className="buttonProjetos" id='HTML-CSS'>HTML-CSS</button>
                     <button onClick={(e)=>trocaProjeto(e)} className="buttonProjetos" id='JavaScript'>JavaScript</button>
                     <button onClick={(e)=>trocaProjeto(e)} className="buttonProjetos" id='React.JS'>React.JS</button>
