@@ -80,7 +80,7 @@ function Body(){
                 <>
                     <div id='projeto1' className='js'>
                     <a
-                            href="https://divulga-fone.vercel.app/"
+                            href="https://vitorvitima.github.io/to-do-list/"
                             target="_blank"
                         >
                             <div className="dados">
